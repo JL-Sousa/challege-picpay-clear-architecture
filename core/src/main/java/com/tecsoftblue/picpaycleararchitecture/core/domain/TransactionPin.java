@@ -17,11 +17,11 @@ public class TransactionPin {
     public TransactionPin() {
     }
 
-    public TransactionPin(User user, String pin, Integer attempt, boolean blocked) {
+    public TransactionPin(User user, String pin) throws TransactionPinException {
         this.user = user;
-        this.pin = pin;
-        this.attempt = attempt;
-        this.blocked = blocked;
+        setPin(pin);
+        this.attempt = 3;
+        this.blocked = false;
         this.createdAt = LocalDateTime.now();
     }
 
