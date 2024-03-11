@@ -15,14 +15,14 @@ import java.math.BigDecimal;
 public class CreateUserUseCaseImpl implements CreateUserUseCase {
 
 
-    private final TaxNumberAvaliableUseCase taxNumberAvaliableUseCase;
+    private final TaxNumberAvailableUseCase taxNumberAvaliableUseCase;
     private final EmailAvailableUseCase emailAvailableUseCase;
     private final CreateUserGateway createUserGateway;
     private final CreateWalletUseCase createWalletUseCase;
     private final CreateTransactionPinUseCase createTransactionPinUseCase;
 
     public CreateUserUseCaseImpl(
-            TaxNumberAvaliableUseCase taxNumberAvaliableUseCase,
+            TaxNumberAvailableUseCase taxNumberAvaliableUseCase,
             EmailAvailableUseCase emailAvailableUseCase,
             CreateUserGateway createUserGateway,
             CreateWalletUseCase createWalletUseCase,
